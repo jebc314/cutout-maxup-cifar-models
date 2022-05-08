@@ -1,7 +1,4 @@
-=> Building model...
-=> loading cifar100 data...
-Files already downloaded and verified
-Files already downloaded and verified
+resnet110_cifar100-cutout-maxup
 Epoch: [0][0/196]	Time 0.986 (0.986)	Data 0.181 (0.181)	Loss 5.9062 (5.9062)	Prec 0.000% (0.000%)
 Epoch: [0][10/196]	Time 0.149 (0.223)	Data 0.001 (0.018)	Loss 4.7283 (5.3467)	Prec 1.953% (1.243%)
 Epoch: [0][20/196]	Time 0.147 (0.187)	Data 0.001 (0.010)	Loss 4.6036 (5.0209)	Prec 1.562% (1.209%)

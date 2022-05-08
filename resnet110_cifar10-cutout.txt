@@ -1,8 +1,4 @@
-=> Building model...
-=> loading cifar10 data...
-Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./data\cifar-10-python.tar.gz
-Extracting ./data\cifar-10-python.tar.gz to ./data
-Files already downloaded and verified
+resnet110_cifar10-cutout
 Epoch: [0][0/196]	Time 8.732 (8.732)	Data 3.935 (3.935)	Loss 2.9857 (2.9857)	Prec 10.938% (10.938%)
 Epoch: [0][10/196]	Time 0.416 (1.167)	Data 0.001 (0.358)	Loss 2.7166 (4.3853)	Prec 12.109% (10.476%)
 Epoch: [0][20/196]	Time 0.418 (0.809)	Data 0.000 (0.188)	Loss 2.3944 (3.4808)	Prec 6.250% (10.175%)
