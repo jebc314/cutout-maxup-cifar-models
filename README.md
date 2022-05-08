@@ -28,3 +28,5 @@ main-100cm.py
 - Cifar100
 - **Cutout**: holes 1 and length 8 and **Maxup**
 - Result: resnet110_cifar100-cutout-maxup-combined.txt
+
+Each experiment had varied run times, but were around 4-5 hours.
