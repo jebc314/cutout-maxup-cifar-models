@@ -18,15 +18,15 @@ main-andy.py
 - Cifar10
 - Cutout: holes 1 and length 16
 - Maxup
-- Result: cutout-maxup.txt
+- Result: resnet110_cifar10-cutout-maxup.txt
 
 main-withcutoutcifar100.py
 - Cifar100
 - Cutout: holes 1 and length 8
-- Result: cutout100.txt
+- Result: resnet110_cifar100-cutout.txt
 
 main-withcutoutcifar100-withmaxup.py
 - Cifar100
 - Cutout: holes 1 and length 8
 - Maxup
-- Result: cutoutmaxup100.txt
+- Result: resnet110_cifar100-cutout-maxup.txt
