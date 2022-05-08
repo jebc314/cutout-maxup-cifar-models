@@ -7,6 +7,8 @@ Refer to commands for what was run and also the corresponding textfile output
 
 All files have cutout and resnet110
 
+MODIFICATION comments label the parts of the main python file changed from junyuseu/pytorch-cifar-models
+
 main.py
 - Cifar10
 - Cutout: holes 1 and length 16

@@ -15,7 +15,7 @@ import torchvision.transforms as transforms
 
 from models import *
 
-from cutout import Cutout # 6th-adds cutout
+from cutout import Cutout # MODIFICATION-adds cutout
 
 
 parser = argparse.ArgumentParser(description='PyTorch Cifar10 Training')
@@ -46,7 +46,7 @@ def main():
         #model = resnet20_cifar()
         # model = resnet32_cifar()
         # model = resnet44_cifar()
-        model = resnet110_cifar() # 6th-using 10
+        model = resnet110_cifar() # MODIFICATION-using 10
         # model = preact_resnet110_cifar()
         # model = resnet164_cifar(num_classes=100)
         # model = resnet1001_cifar(num_classes=100)
@@ -62,7 +62,7 @@ def main():
         # mkdir a new folder to store the checkpoint and best model
         if not os.path.exists('result'):
             os.makedirs('result')
-        fdir = 'result/resnet110_cifar10' # 6th-saving to right name
+        fdir = 'result/resnet110_cifar10-cutout' # MODIFICATION-saving to right name
         if not os.path.exists(fdir):
             os.makedirs(fdir)
 
@@ -112,7 +112,7 @@ def main():
                 transforms.RandomHorizontalFlip(),
                 transforms.ToTensor(),
                 normalize,
-                Cutout(n_holes=1, length=16) # 6th-Add cutout transformation
+                Cutout(n_holes=1, length=16) # MODIFICATION-Add cutout transformation
             ]))
         trainloader = torch.utils.data.DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, num_workers=2)
 
@@ -285,7 +285,7 @@ def save_checkpoint(state, is_best, fdir):
 
 def adjust_learning_rate(optimizer, epoch, model_type):
     """For resnet, the lr starts from 0.1, and is divided by 10 at 80 and 120 epochs"""
-    if model_type == 1: # 6th-change learning rate change to be like paper
+    if model_type == 1: # MODIFICATION-change learning rate change according to MaxUp paper
         if epoch < 100:
             lr = args.lr
         elif epoch < 150:
