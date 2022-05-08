@@ -1,12 +1,12 @@
-1. python main.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "resnet-110-cutout.txt"
-2. python main.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "cutout-maxup.txt" 
-3. python main-withcutoutcifar100.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "cutout100.txt"
-4. python main-withcutoutcifar100-withmaxup.py  --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "cutoutmaxup100.txt"
+1. python main-10c.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "resnet110_cifar10-cutout.txt"
+2. python main-10cm.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "resnet110_cifar10-cutout-maxup.txt" 
+3. python main-100c.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "resnet110_cifar100-cutout.txt"
+4. python main-100cm.py  --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "resnet110_cifar100-cutout-maxup.txt"
 
 and for the last one because it was cut short at 179 epoch:
-python main-withcutoutcifar100-withmaxup.py  --epoch 200 --start-epoch 180 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 --resume=result/resnet110_cifar100-maxup/checkpoint.pth -ct 10 > "cutoutmaxup100.txt"
+python main-100cm.py  --epoch 200 --start-epoch 180 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 --resume=result/resnet110_cifar100-maxup/checkpoint.pth -ct 10 > "resnet110_cifar100-cutout-maxup-continued.txt"
 
 1. Run on Jeb Cui's PC. Hardware: GeForce GTX 1650. Package versions: PyTorch 1.11.0 and CUDA 11.3
 2. Run on Andy Wang's Laptop. Hardware: GeForce RTX 3070. Package versions: PyTorch 1.11.0 and CUDA 11.3
-3. Run on TJ's JupyterHub Snowey. Hardware: GeForce RTX 2080. Package verisons: PyTorch 1.8.1+cu101 and CUDA 10.1
-4. Run on TJ's JupyterHub Snowey. Hardware: GeForce RTX 2080. Package verisons: PyTorch 1.8.1+cu101 and CUDA 10.1
+3. Run on TJ's JupyterHub Snowy. Hardware: GeForce RTX 2080. Package verisons: PyTorch 1.8.1+cu101 and CUDA 10.1
+4. Run on TJ's JupyterHub Snowy. Hardware: GeForce RTX 2080. Package verisons: PyTorch 1.8.1+cu101 and CUDA 10.1

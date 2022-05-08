@@ -5,28 +5,26 @@ Maxup code from: Chengyue Gong and the paper https://openaccess.thecvf.com/conte
 
 Refer to commands for what was run and also the corresponding textfile output
 
-All files have cutout and resnet110
+All files use cutout and resnet110
 
 MODIFICATION comments label the parts of the main python file changed from junyuseu/pytorch-cifar-models
 
-main.py
+main-10c.py
 - Cifar10
-- Cutout: holes 1 and length 16
+- **Cutout**: holes 1 and length 16
 - Result: resnet110_cifar10-cutout.txt
 
-main-andy.py
+main-10cm.py
 - Cifar10
-- Cutout: holes 1 and length 16
-- Maxup
+- **Cutout**: holes 1 and length 16 and **MaxUp**
 - Result: resnet110_cifar10-cutout-maxup.txt
 
-main-withcutoutcifar100.py
+main-100c.py
 - Cifar100
-- Cutout: holes 1 and length 8
+- **Cutout**: holes 1 and length 8
 - Result: resnet110_cifar100-cutout.txt
 
-main-withcutoutcifar100-withmaxup.py
+main-100cm.py
 - Cifar100
-- Cutout: holes 1 and length 8
-- Maxup
-- Result: resnet110_cifar100-cutout-maxup.txt
+- **Cutout**: holes 1 and length 8 and **Maxup**
+- Result: resnet110_cifar100-cutout-maxup-combined.txt
