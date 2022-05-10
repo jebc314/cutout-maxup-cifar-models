@@ -1,7 +1,7 @@
 1. python main-10c.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "resnet110_cifar10-cutout.txt"
 2. python main-10cm.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "resnet110_cifar10-cutout-maxup.txt" 
-3. python main-100c.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "resnet110_cifar100-cutout.txt"
-4. python main-100cm.py  --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 10 > "resnet110_cifar100-cutout-maxup.txt"
+3. python main-100c.py --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 100 > "resnet110_cifar100-cutout.txt"
+4. python main-100cm.py  --epoch 200 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 -ct 100 > "resnet110_cifar100-cutout-maxup.txt"
 
 and for the last one because it was cut short at 179 epoch:
 python main-100cm.py  --epoch 200 --start-epoch 180 --batch-size 256 --lr 0.1 --momentum 0.9 --wd 2.5e-4 --resume=result/resnet110_cifar100-maxup/checkpoint.pth -ct 10 > "resnet110_cifar100-cutout-maxup-continued.txt"
